@@ -1,0 +1,152 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+
+*{font-family: "Poppins", sans-serif;}
+
+body, html {
+    height: 100%;
+    background-color: rgb(247, 245, 219);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-content-box{
+	 margin-left: 200px; /* Space for the sidenav */
+       
+        flex-grow: 1;
+}
+.main {
+    color: black;
+   text-align:center;
+}
+
+.museNet {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 55px;
+}
+
+.quote {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 25px;
+}
+
+.main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(36, 24, 19, 0.6);
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav a,
+.dropdown-btn {
+	padding: 3px 6px 6px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in, padding-left 0.2s;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+	color: #f1f1f1;
+	 padding-left: 1.5rem;
+    background-color: var(--secondary-light);
+}
+
+.dropdown-container {
+	display: none;
+	background-color: rgb(36, 24, 19, 0.5);
+	padding-left: 8px;
+	transition: max-height 0.5s;
+	
+}
+
+.fa-caret-down {
+	float: right;
+	padding-right: 8px;
+}
+
+.page-text {
+    padding: 30px;
+    text-align: justify;
+}
+
+.main-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(120, 77, 59); /* Brown */
+}
+
+.subheading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555; /* Dark gray */
+}
+
+.paragraph {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #ffff99; /* Yellow */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.link {
+    color: #007bff; /* Blue */
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/*
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-foreground {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.video-foreground iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border: 0;
+}
+*/

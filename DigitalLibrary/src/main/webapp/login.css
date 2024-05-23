@@ -1,0 +1,155 @@
+@charset "ISO-8859-1";html, body {
+	width:100%;
+	height:100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    background: url("img/maps.png");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 370px;
+	padding: 40px;
+	background: rgba(36, 24 , 19,.4);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(36, 24 , 19,.5);
+	border-radius: 10px;
+}
+.box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #FFF;
+	text-align: center;
+}
+
+.box .inputBox {
+	position: relative;
+}
+.box .inputBox input {
+	width: 100%;
+/*	padding: 12px 0;*/
+	font-size: 16px;
+	color: #FFF;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+	border: none;
+	border-bottom: 1px solid #573122;
+	outline: none;
+	background: transparent;
+	margin-top: 35px;
+}
+.box .inputBox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	pointer-events: none;
+	transition: .5s;
+	animation: LabelOnLoad 1s forwards 0s ease;
+}
+@keyframes LabelOnLoad{
+    0%{
+        transform: rotate(0) translateY(-19px);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+.box .inputBox input:focus ~ label, 
+.box .inputBox input:valid ~ label {
+	top: -19px;
+	left:0;
+	color: #03A9F4;
+	font-size: 15px;
+}
+.box input[type='submit'] {
+	background:#573122;;
+	border: none;
+	outline: none;
+	color: #FFF;
+	
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 40px;
+	font-size: 20px;
+	MARGIN-LEFT: 90PX;
+  WIDTH: 110PX;
+  margin-top: 20px;
+}
+.box input[type='submit']:hover {
+	background-color: rgba(3, 169, 244, 0.7);
+}
+@media(max-width: 720px){
+	.box {
+		width: 80%;
+	}
+	}
+
+.btn {
+  height: 60px;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ 
+.login,
+.signup {
+    font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  color:#fff;
+}
+.slider {
+ height: 50px;
+  width: 135px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #8B6C5C,#5B3E31);
+  position: absolute;
+  top: 65px;
+  left: 45px;
+  transition: all 0.5s ease-in-out;
+  }
+  
+.moveslider {
+    left: 190px;
+}
+
+.profile-icon {
+	background: url("img/avatar.png");
+   width: 110px;
+  height: 110px;
+  
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+   margin-left: 85px;
+   cursor: pointer;
+  
+  }
+  input[type='file']
+  {
+	 /* color:transparent;
+	  margin-top: 115px;
+  	margin-left: 20px;*/
+  	display: none; 
+  }
+  

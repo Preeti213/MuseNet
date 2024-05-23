@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+.main {
+  margin-left: 200px;
+  font-size: 20px;
+  padding: 0px 10px;
+  
+}
+
+
+.heading-main{
+	text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+
+.search-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  margin-top: 90px;
+}
+
+.search-container input[type="text"] {
+  width: 200px;
+  border-radius: 14px;
+  padding-left: 10px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  background-color: white;
+  color: #008080;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #008080;
+  color: white;
+}
+.addBook {
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 13px;
+  border-color: #008080;
+}
+table{
+	margin-top:75px
+}
+
+#addButton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  margin-bottom: 10px;
+  margin-right: 6px;
+}

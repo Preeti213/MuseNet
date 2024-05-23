@@ -1,0 +1,101 @@
+@charset "ISO-8859-1";
+
+html{
+  	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body
+{
+	background-color:beige;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.auth-page{
+    font-family: titillium web,sans-serif;
+    margin-top: 3rem;
+    width:450px;
+    background-color: white;
+    border-radius: 10px;
+    padding:30px 10px;
+}
+
+.input-container{
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.auth-input{
+    width: 80%;
+    height: 40px;
+    padding: 5px 15px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4.8px;
+    color: #55595c;
+}
+
+.auth-input:focus{
+    border: 1px solid #008080;
+}
+
+.auth-button{
+    color: white;
+    background-color: #595349;
+    height: 48px;
+    padding: 12px 24px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4.8px;
+    width: 392px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-button:hover{
+    background-color:  #9c907e;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+input[type="password"]{
+    font: caption;
+}
+
+input[type="checkbox"]{
+   width:20px
+}
+a{
+    color:brown;
+}
+.center{
+    text-align: center;
+}
+
+.label{
+    font-weight: bold;
+    margin-left: 30px;
+}
+.rem-cont{
+    display: flex;
+    margin-left: 27px;
+}
+
+small{
+    font-weight: bold;
+}
+
+.label-remember{
+    padding: 14px;
+    font-weight: bold;
+}

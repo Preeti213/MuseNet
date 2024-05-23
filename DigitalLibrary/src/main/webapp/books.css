@@ -1,0 +1,125 @@
+@charset "ISO-8859-1";
+.container {
+/*     margin-left: 210px; */
+    display: flex;
+    margin-top: 55px;
+}
+
+.discover-books {
+    flex: 1;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.search-container form {
+    display: flex; /* Align items horizontally */
+}
+
+.search-container {
+    position: absolute;
+    right: 0;
+}
+
+.search-container input[type="text"] {
+    width: 200px;
+    border-radius: 14px;
+    padding-left: 10px;
+    margin-right: 2px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background-color: rgb(247, 245, 219);
+    color: #008080;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 20px;
+}
+
+.book {
+    display: flex; /* Set to flex */
+    align-items: flex-start; /* Align items vertically */
+    margin-bottom: 20px;
+    padding: 10px;
+/*     margin-left: 200px; */
+}
+
+.book img {
+    width: 130px;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+.book a{
+	text-decoration: none; 
+	color: inherit; 
+	
+}
+.book-details {
+    width: 770px;
+    margin-left: 10px;
+/*     margin-top: 10px; */
+    text-align: justify;
+}
+
+.book-details h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.book-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.book-info{
+	font-size: 15px;
+    align-content: center;
+    margin-top: 10px;
+}
+.button-group {
+    display: flex;
+    flex-direction: column; /* Set flex direction to column */
+    align-items: center; /* Align items at the start */
+    margin-left: 25px; /* Add some space between button groups */
+}
+.wishlist-button
+{
+	margin-top: 45px;
+}
+
+.wishlist-button,
+.details-button {
+    
+    margin-bottom: 10px;
+    background-color: wheat;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 180px;
+}
+
+.wishlist-button:hover,
+.details-button:hover {
+    background-color: saddlebrown; /* Darker green */
+}
+
+.add-to-wishlist {
+    text-align: right;
+}
